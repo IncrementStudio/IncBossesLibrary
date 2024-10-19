@@ -1,14 +1,14 @@
 {
   "IncAbility_BossBar": {
-    "latest": "IncAbility_BossBar.jar",
-    "latestVersion": "1.0"
+    "file": "IncAbility_BossBar.jar",
+    "version": "1.0"
   },
   "IncAbility_Actions": {
-    "latest": "IncAbility_Actions.jar",
-    "latestVersion": "1.0"
+    "file": "IncAbility_Actions.jar",
+    "version": "1.0"
   },
   "IncAbility_Auras": {
-    "latest": "IncAbility_Auras.jar",
-    "latestVersion": "1.0"
+    "file": "IncAbility_Auras.jar",
+    "version": "1.0"
   }
 }
