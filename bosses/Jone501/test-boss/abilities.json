@@ -1,0 +1,10 @@
+{
+  "library": [
+    "IncrementStudio/IncAbility_BossBar",
+    "IncrementStudio/IncAbility_Actions",
+    "IncrementStudio/IncAbility_Auras"
+  ],
+  "files": [
+    "PiglinAbility-1.0.jar"
+  ]
+}

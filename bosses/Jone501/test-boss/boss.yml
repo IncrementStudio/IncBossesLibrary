@@ -1,0 +1,49 @@
+entity-type: PIGLIN_BRUTE
+boss-name: 'Брутальный пиглин'
+health: 150
+start-phase:
+  type: SPECIFIC
+  phase: main
+abilities:
+  piglin:
+    ability: PiglinAbility
+phases:
+  main:
+    abilities:
+      actions:
+        ability: IncAbility_Actions
+        spawn-actions:
+        - '[attribute] GENERIC_ATTACK_DAMAGE:30'
+        - '[particles] SQUID_INK:500'
+        - '[particles] CLOUD:500'
+        - '[sound] ENTITY_ENDER_DRAGON_GROWL:1:1'
+        - '[particles(d=15s;p=30s;r=2)] SQUID_INK:500'
+        - '[particles(d=15s;p=30s;r=2)] CLOUD:500'
+        - '[sound(d=15s;p=30s;r=2)] ENTITY_WITHER_SHOOT:1:1'
+        death-actions:
+        - '[particles] SQUID_INK:500'
+        - '[particles] CLOUD:500'
+        - '[sound] ENTITY_ENDER_DRAGON_DEATH:1:1'
+      auras:
+        ability: IncAbility_Auras
+        auras:
+          debuffs-1:
+            radius: 15
+            delay: 15s
+            actions:
+            - '[effect] SLOW:4:300'
+            - '[effect] BLINDNESS:1:80'
+            - '[particle-area] 15:CRIT:1500'
+          debuffs-2:
+            radius: 15
+            delay: 45s
+            actions:
+            - '[effect] SLOW:4:300'
+            - '[effect] BLINDNESS:1:80'
+            - '[effect] WITHER:1:400'
+            - '[particle-area] 15:CRIT:1500'
+      boss-bar:
+        ability: IncAbility_BossBar
+        title: '&4--=| &fБосс&7: &r%boss-name% &7(&f%health%&7/&f%max-health%&7) &4|=--'
+        radius: 25
+        color: RED
